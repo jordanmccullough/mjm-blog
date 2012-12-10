@@ -49,7 +49,7 @@ Usage:
           <h1>{{ post.title }}</h1>
           <p>{{ post.description }}</p>
 
-          <img src="{{ BASE_PATH }}/_posts/assets/{{ post.image }}">
+          <img src="{{ BASE_PATH }}/post-assets/{{ post.image }}">
         </article>
       </li>
 
