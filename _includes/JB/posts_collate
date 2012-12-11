@@ -46,10 +46,13 @@ Usage:
             <span class="year">{{this_year}}</span>
           </time>
 
-          <h1>{{ post.title }}</h1>
+          {{ if post.image }}
+            <img class="post-image" src="{{ BASE_PATH }}/post-assets/{{ post.image }}">
+          {{ endif }}
+
+          <a href="{{ BASE_PATH }}{{ post.url }}"><h1>{{ post.title }}</h1></a>
           <p>{{ post.description }}</p>
 
-          <img src="{{ BASE_PATH }}/post-assets/{{ post.image }}">
         </article>
       </li>
 
