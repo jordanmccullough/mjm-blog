@@ -1,0 +1,119 @@
+/* General Overrides */
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville|Raleway:700,300);
+
+body,html{
+	font-family: "Raleway", Helvetica, sans-serif;
+}
+
+header{
+	background: #000;
+	background: #2d2f33; /* Old browsers */
+	background: -moz-linear-gradient(top,  #2d2f33 0%, #000000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2d2f33), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #2d2f33 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #2d2f33 0%,#000000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #2d2f33 0%,#000000 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #2d2f33 0%,#000000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d2f33', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+header h1, header h2, header h3{
+	color: #999;
+}
+header{
+	border-top: solid .25em #fff;
+	padding: 1em 0 0 0;
+}
+footer{
+	margin: 1em 0 0 0;
+	padding: .5em 0 0 0;
+	color: #fff;
+}
+
+
+.author{
+	padding-left: 11em;	
+}
+.gravatar{
+	position: absolute;
+	border-radius: 50%;
+	height: 13em;
+	width: 13em;
+
+	margin-left: -14em;
+	margin-top: -2em;
+
+	box-shadow: 0 0 0 .5em #fff,  0 0 0 2px #ccc;
+	
+	-ms-transform:rotate(-7deg); /* IE 9 */
+	-moz-transform:rotate(-7deg); /* Firefox */
+	-webkit-transform:rotate(-7deg); /* Safari and Chrome */
+	transform:rotate(-7deg);
+}
+
+/* Posts */
+.post-image{
+	position: absolute;
+	height: 99%;
+	width: auto;
+	bottom: 1px;
+	left: 13em;
+}
+
+.posts{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+.posts li{
+	border-bottom: solid 1px #d9d5d2;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: "Libre Baskerville";
+}
+
+.posts article{
+	height: 8em;
+	position: relative;
+	padding: 1em;
+	background: #f1f1f1;
+	margin: 1em 1em 0 1em;
+	border-top-left-radius: .5em;
+	border-top-right-radius: .5em;
+}
+
+.posts article time{
+	font-size: 1em;
+	display: block;
+	position: relative;
+	height: .5em;
+}
+	
+	.posts article time .day{
+		border-right: solid 1px #d9d5d2;
+		font-size: 3em;
+		width: 1em;
+		text-align: center;
+		padding: .5em .25em .5em 0;
+		position: absolute;
+		left: 0;
+	}
+	.posts article time .month{
+		position: absolute;
+		left: 5em;
+		top: 1.5em;
+	}
+
+	.posts article time .year{
+		position: absolute;
+		left: 7.25em;
+		top: 1.5em;
+	}
+
+.posts article h1{
+	margin-left: 35%;
+	width: 65%;
+}
+.posts article p{
+	margin-left: 35%;
+	width: 65%;
+}
