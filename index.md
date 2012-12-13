@@ -1,7 +1,7 @@
 ---
 layout: home
-title: Trainer Extrao-rdinaire 
-tagline: Life of a GitHub Teacher
+title: Trainer Extra-ordinaire 
+tagline: Life of a GitHub Teacher & Trainer
 ---
 
 
