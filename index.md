@@ -1,8 +1,14 @@
 ---
-layout: page
-title: Hello World!
-tagline: Supporting tagline
+layout: home
+title: Trainer Extrao-rdinaire 
+tagline: Life of a GitHub Teacher
 ---
+
+
+<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac ultricies augue. Nulla aliquet lorem et magna aliquet eu commodo mauris interdum.</p>
+
+
+
 {% include JB/setup %}
 
 Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
