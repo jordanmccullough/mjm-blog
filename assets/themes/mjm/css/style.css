@@ -1,70 +1,197 @@
-/* General Overrides */
-@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville|Raleway:700,300);
-
-body,html{
-	font-family: "Raleway", Helvetica, sans-serif;
+.toggle-switch {
+    width:73px;
+    height:28px;
+    margin:20px;
+    padding:3px;
+    /*overflow:hidden;*/
+    -webkit-transform:translateZ(0); /* eliminates flickering */
 }
-
-h1,h2,h3{
-	text-shadow: 1px 1px 1px #222;
+ 
+.toggle-switch .bg {
+    width:73px; 
+    height:28px;
+    margin-bottom:-27px;
+    -webkit-border-radius:14px; -moz-border-radius:14px; border-radius:14px;
+    background-image:-webkit-gradient(linear,0 0, 100% 0, from(#08c), color-stop(50%, #08c), color-stop(51%, #fefefe), to(#eee));
+    background-image:-moz-linear-gradient(0deg, #08c 0, #08c 50%, #fefefe 51%, #eee 100%);
+    background-image:-linear-gradient(#08c, #08c 50%, #fefefe 51%, #eee);
+    -webkit-background-size:200%; -moz-background-size:200%; background-size:200%;
+    -webkit-transition:background-position 0.16s linear;
+       -moz-transition:background-position 0.2s linear;
+            transition:background-position 0.2s linear;
+    background-position:85%;
+    -webkit-box-shadow:inset 0 0 4px rgba(0,0,0,0.7), inset 0 14px 0 rgba(0,0,0,0.1);
+       -moz-box-shadow:inset 0 0 4px rgba(0,0,0,0.7), inset 0 14px 0 rgba(0,0,0,0.1);
+            box-shadow:inset 0 0 4px rgba(0,0,0,0.7), inset 0 14px 0 rgba(0,0,0,0.1);
 }
-
-.menu{
-	padding-left: 20px;
-	padding-right: 20px;
-	background: #333;
-
-	box-shadow: inset 0 -3em 4em -1em #000;
+ 
+.toggle-switch label { display:block; display:-webkit-box; display:-moz-box; display:box; width:78px; height:28px; position:relative; z-index:1;
+    -webkit-box-align:center; -moz-box-align:center; box-align:center;
+    -webkit-box-orient:horizontal; -moz-box-orient:horizontal; box-orient:horizontal;
+    -webkit-transform:translateX(-47px); -moz-transform:translateX(-47px); transform:translateX(-50%);
+    -webkit-transition:-webkit-transform 0.19s linear; -moz-transition:-moz-transform 0.2s linear; transition:transform 0.2s linear;
+    -webkit-tap-highlight-color:transparent;
 }
+ 
+.toggle-switch input:checked ~ .bg { background-position-x:20%; background-position:20% 50%; }
+.toggle-switch input:checked ~ label { -webkit-transform:translateX(0); -moz-transform:translateX(0); transform:translateX(0);}
+.toggle-switch input:checked ~ label span:last-child { -webkit-opacity:0; opacity:0; -webkit-transition-delay:0s; -moz-transition-delay:0s; transition-delay:0s; }
+ 
 
-.masthead{
-	color: #bbb;
-	background: #444;
-	margin-top: 42px;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 1.5em;
-	padding-bottom: 1.5em;
-
-	box-shadow: inset 0 -3em 8em -3em #222;
-}
-
-.masthead-home{
-	border-top: 1px solid #565656;
-	padding-top: 1em;
-	min-height: 8.5em;
-	background: #444;
-	color: #eee;
-	text-align: center;
-
-	box-shadow: inset 0 -3em 8em -4em black;
-}
-
-.gravatar{
-	height: auto;
-	width: 14em;
-	margin-top: -1.5em;
-	margin-left: -2em;
+.mobi-menu{
 	position: absolute;
 	z-index: 10000;
-	border-radius: 50%;
-	box-shadow: 0 0 0 3px #ccc, 0 0 1px 4px #000, 2px 2px 1.5em #333;
-
-	transform: rotate(-7deg);
-	-ms-transform: rotate(-7deg); /* IE 9 */
-	-webkit-transform: rotate(-7deg); /* Safari and Chrome */
-	-o-transform: rotate(-7deg); /* Opera */
-	-moz-transform: rotate(-7deg); /* Firefox */
+	background: white;
+	border: blue solid 2px;
+	height: 10em;
+	width: 10em;
 }
-	.gravatar-offset{
-		padding-left: 10em;
-	}
-
-
-
-.logo{
-	display: block;
+.toggle-switch input:checked ~ .mobi-menu{
+	border: green solid 10px;
 }
+
+.toggle-switch input { display:none; }
+ 
+.toggle-switch label span {
+    display:block; width:50%; padding:0 15px; font-size:14px; font-weight:bold; line-height:26px;
+    -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
+}
+ 
+.toggle-switch label span:first-child { position:relative; color:#fff; padding-right:0; width:46px; }
+ 
+.toggle-switch label span:last-child {
+    padding-left:33px;
+    padding-right:0;
+    color:#666;
+    text-shadow:1px 1px 0 #fff;
+    -webkit-opacity:0.7; -moz-opacity:0.7; opacity:0.7;
+    -webkit-transition:-webkit-opacity 0.2s 0.1s linear; -moz-transition:-moz-opacity 0.2s linear; transition:opacity 0.2s 0.1s linear;
+}
+ 
+.toggle-switch label span:first-child::after {
+    position:absolute;
+    right:-28px;
+    top:-2px;
+    display:inline-block;
+    width:28px;
+    height:28px;
+    border:1px solid #666;
+    -webkit-border-radius:14px; -moz-border-radius:14px; border-radius:14px;
+    background-color:#ccc;
+    -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
+    content:"";
+    -webkit-box-shadow:0 0 2px rgba(0,0,0,0.7), inset 0 0 3px 1px rgba(255,255,255,1);
+       -moz-box-shadow:0 0 2px rgba(0,0,0,0.7), inset 0 0 3px 1px rgba(255,255,255,1);
+            box-shadow:0 0 2px rgba(0,0,0,0.7), inset 0 0 3px 1px rgba(255,255,255,1);
+    background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#bbb), to(#fefefe));
+    background-image:-moz-linear-gradient(#bbb, #fefefe);
+    background-image:linear-gradient(#bbb, #fefefe);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mobi-nav input[type=checkbox] {
+	visibility: hidden;
+}
+
+
+
+/* ROUNDED ONE */
+.mobi-nav {
+	width: 28px;
+	height: 28px;
+	background: #fcfff4;
+
+	background: #fff;
+	margin: 20px auto;
+
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+
+
+	position: relative;
+}
+
+.mobi-nav label {
+	cursor: pointer;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	left: 4px;
+	top: 4px;
+
+
+	background: #333;
+}
+
+.mobi-nav label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	background: #00bf00;
+
+
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	top: 2px;
+	left: 2px;
+}
+
+.mobi-nav label:hover::after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	filter: alpha(opacity=30);
+	opacity: 0.3;
+}
+
+.mobi-nav input[type=checkbox]:checked + label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+.mobi-nav input[type=checkbox]:checked + label + ul{
+	width: 10em;
+	visibility: visible;
+	border: blue solid 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 979px){
 	.menu{
