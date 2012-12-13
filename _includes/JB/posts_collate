@@ -47,7 +47,7 @@ Usage:
           </time>
 
           {{ if post.image }}
-            <img class="post-image" src="{{ BASE_PATH }}/post-assets/{{ post.image }}">
+            <img class="post-image hidden-phone" src="{{ BASE_PATH }}/post-assets/{{ post.image }}">
           {{ endif }}
 
           <a href="{{ BASE_PATH }}{{ post.url }}"><h1>{{ post.title }}</h1></a>
