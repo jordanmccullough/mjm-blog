@@ -46,6 +46,7 @@
 
 .mobi-menu{
 	visibility: hidden;
+	z-index: 1000;
 	left: 0;
 	top: 54px;
 	width: 100%;
@@ -60,6 +61,9 @@
 	position: absolute;
 	background: #ddd;
 	height: auto;
+}
+.mobi-menu li{
+	width: 100%;
 }
 
 .toggle-switch input { display:none; }
