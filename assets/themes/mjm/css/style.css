@@ -55,6 +55,8 @@
 	margin-right: 20px;
 	background: #fff;
 	position: absolute;
+
+	box-shadow: 0 0 2em 1em #000;
 }
 .toggle-switch input:checked ~ .mobi-menu{
 	visibility: visible;
@@ -168,7 +170,7 @@ h1,h2,h3{
 	margin-top: -1.5em;
 	margin-left: -2em;
 	position: absolute;
-	z-index: 10000;
+	z-index: 500;
 	border-radius: 50%;
 	box-shadow: 0 0 0 3px #ccc, 0 0 1px 4px #000, 2px 2px 1.5em #333;
 
