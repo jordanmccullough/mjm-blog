@@ -127,6 +127,7 @@ h1,h2,h3{
 
 body,html{
 	font-family: "Raleway", Helvetica, sans-serif;
+	/*padding-top: 3em;*/
 }
 
 
@@ -135,7 +136,7 @@ body,html{
 	border-top: solid 3px #b99d5b;
 	background: #806c3e;
 	border-bottom: none;
-
+	/*position: fixed;*/
 }
 	.menu .navbar-inner{
 		background: #fff;
@@ -145,27 +146,42 @@ body,html{
 hr{
 	border: 0;
 	height: 5px;
-	background-color: #b99d5b;
+	/*background-color: #b99d5b;*/
+	background-color: #eae9ea;
+}
+
+
+@media (min-width: 979px){
+	header .row-fluid{
+		margin-top: 4em;
+	}
 }
 
 footer hr{
 	border: 0;
 	height: 5px;
-	background-color: #000;
+	background-color: #eae9ea;
 }
 
-
 .gravatar{
-	height: auto;
-	width: 4em;
+	text-align: center;
+}
+.gravatar img{
+	height: 8em;
+	width: auto;
 	border-radius: 50%;
 	box-shadow: 0 0 0 3px #ccc, 0 0 1px 4px #000, 2px 2px 1.5em #333;
 
-	transform: rotate(-7deg);
-	-ms-transform: rotate(-7deg); /* IE 9 */
-	-webkit-transform: rotate(-7deg); /* Safari and Chrome */
-	-o-transform: rotate(-7deg); /* Opera */
-	-moz-transform: rotate(-7deg); /* Firefox */
+	/*margin-top: 2em;*/
+
+
+}
+
+@media (max-width: 767px){
+	.gravatar img{
+		border-radius: 0;
+		box-shadow: 0 0 0 1px #fff, 0 0 0 8px #ccc;
+	}
 }
 
 
