@@ -77,20 +77,27 @@ ul.full-menu li a{
 	margin-right: -20px;
 	margin-bottom: 1em;
 	/*margin-top: -1em;*/
-	border: solid 2px #ffd65e;
+	/*border: solid 2px #ffd65e;*/
 	box-shadow: 0 -.25em 1em 0 #999;
 }
-/*.masthead:after{
-	content: '';
-	position: relative;
-	width: 100%;
-	top: 14em;
-	margin-left: -20px;
-	margin-right: -20px;
-	/*margin-top: -1em;*/
-	border: solid 1px #fff;
-	box-shadow: 0 0 3em 0 #999;
-}*/
+
+.ribbon{
+	display: inline-block;
+	width: 100px;
+	height: 5em;
+	background: #8ade77;
+	float: right;
+}
+	.ribbon:before{
+		content: '';
+		position: absolute;
+		width: 0; 
+		height: 0; 
+		margin-top: 5em;
+		border-right: 50px solid #8ade77;
+		border-left: 50px solid #8ade77;
+		border-bottom: 10px solid transparent;
+	}
 
 .gravatar{
 	display: inline-block;
