@@ -42,17 +42,21 @@ Usage:
         <article>
           <div class="row-fluid">
             <div class="span3">
+                <div class="category"><i>{{ post.category }}</i></div>
+
                 {% comment %}
-                  {{ if post.image }}
-                    <img class="post-image visible-desktop" src="{{ BASE_PATH }}/post-assets/{{ post.image }}">
-                  {{ endif }}
+                {{ if post.image }}
+                  <img class="post-image visible-desktop" src="{{ BASE_PATH }}/post-assets/{{ post.image }}">
+                {{ endif }}
                 {% endcomment %}
 
-                <div class="category"><i>{{ post.category }}</i></div>
+                
               </div>
 
               <div class="span9">
                 
+
+
                 <time pubdate datetime="{{ mf_year }}-{{ mf_month }}-{{ mf_day }}">
                   <span class="month">{{this_month}}</span>
                   <span class="day">{{this_day}}</span>

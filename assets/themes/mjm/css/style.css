@@ -128,11 +128,12 @@ ul.full-menu li a{
 		/*padding: .25em .5em;*/
 		/*border-radius: .25em;*/
 	}
+	.posts img{
+		border-radius: .5em;
+		width: 100%;
+		height: auto;
+	}
 	.posts p{
-		/*margin-top: 2em;*/
-		/*padding: .25em .5em;*/
-		/*border-radius: .25em;*/
-		
 	}
 /*	.posts p:before{
 		content: ' ';
@@ -150,11 +151,26 @@ ul.full-menu li a{
 		text-transform: capitalize;
 		height: 5em;
 		width: 5em;
-		margin-right: .5em;
+
+		margin: auto auto;
 		background: #ffd65e;
 		border-radius: 4em;
 
 		display: table;
+
+		/* Safari */
+		-webkit-transform: rotate(-7deg);
+
+		/* Firefox */
+		-moz-transform: rotate(-7deg);
+
+		/* IE */
+		-ms-transform: rotate(-7deg);
+
+		/* Opera */
+		-o-transform: rotate(-7deg);
+
+
 	}
 	.posts .category i{
 		text-align: center;
