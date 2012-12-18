@@ -1,278 +1,35 @@
-.toggle-switch {
-/*    width:100%;
-    height:28px;*/
-
-    height: 2em;
-    margin-top: -2.5em;
-
-    /*background: #777;*/
-
-    /*margin:20px;*/
-    /*padding:3px;*/
-    /*overflow:hidden;*/
-    /*-webkit-transform:translateZ(0); /* eliminates flickering */*/
+html,body{
+	font-size: 14px;
 }
- 
-.toggle-switch .bg {
-    width:73px; 
-    height:28px;
-    margin-bottom:-27px;
-    -webkit-border-radius:14px; -moz-border-radius:14px; border-radius:14px;
-
-    background-position:85%;
-}
- 
-.toggle-switch label { 
-		display:block; 
-		display:-webkit-box; 
-		display:-moz-box; 
-		display:box; 
-		width: auto; /*78px;*/ 
-		height:28px;
-		position:relative;
-		z-index:1;
-		float:right;
-    /*-webkit-box-align:center; -moz-box-align:center; box-align:center;
-    -webkit-box-orient:horizontal; -moz-box-orient:horizontal; box-orient:horizontal;
-    -webkit-transform:translateX(-47px); -moz-transform:translateX(-47px); transform:translateX(-50%);
-    -webkit-transition:-webkit-transform 0.19s linear; -moz-transition:-moz-transform 0.2s linear; transition:transform 0.2s linear;
-    -webkit-tap-highlight-color:transparent;*/
-}
- 
-.toggle-switch input:checked ~ .bg { background-position-x:20%; background-position:20% 50%; }
-.toggle-switch input:checked ~ label { -webkit-transform:translateX(0); -moz-transform:translateX(0); transform:translateX(0);}
-.toggle-switch input:checked ~ label span:last-child { -webkit-opacity:0; opacity:0; -webkit-transition-delay:0s; -moz-transition-delay:0s; transition-delay:0s; }
- 
-
-.mobi-menu{
-	visibility: hidden;
-	z-index: 1000;
-	left: 0;
-	top: 54px;
-	width: 100%;
-	height: 0;
-	margin-left: 20px;
-	margin-right: 20px;
-	background: #fff;
-	position: absolute;
-
-	box-shadow: 0 10em 19em 10em white;
-}
-.toggle-switch input:checked ~ .mobi-menu{
-	visibility: visible;
-	position: absolute;
-	background: #fff;
-	height: auto;
-}
-.mobi-menu li{
-	width: 100%;
-}
-
-.toggle-switch input { display:none; }
- 
-.toggle-switch label span {
-    display:block; width:50%; padding:0 15px; font-size:14px; font-weight:bold; line-height:26px;
-    -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
-}
- 
-.toggle-switch label span:first-child { position:relative; color:#fff; padding-right:0; width:46px; }
- 
-.toggle-switch label span:last-child {
-    padding-left:33px;
-    padding-right:0;
-    color:#666;
-}
- 
-.toggle-switch label span:first-child::after {
-    position:absolute;
-    right:-28px;
-    top:-2px;
-    display:inline-block;
-    width:28px;
-    height:28px;
-    border:1px solid #666;
-    -webkit-border-radius:14px; -moz-border-radius:14px; border-radius:14px;
-    background-color:#ccc;
-    -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
-    content:"";
-/*    -webkit-box-shadow:0 0 2px rgba(0,0,0,0.7), inset 0 0 3px 1px rgba(255,255,255,1);
-       -moz-box-shadow:0 0 2px rgba(0,0,0,0.7), inset 0 0 3px 1px rgba(255,255,255,1);
-            box-shadow:0 0 2px rgba(0,0,0,0.7), inset 0 0 3px 1px rgba(255,255,255,1);
-    background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#bbb), to(#fefefe));
-    background-image:-moz-linear-gradient(#bbb, #fefefe);
-    background-image:linear-gradient(#bbb, #fefefe);*/
-}
-
-
-
-
-
-
-
-
-
-/* General Overrides */
-@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville|Raleway:700,300);
-
-body,html{
-	font-family: "Raleway", Helvetica, sans-serif;
-}
-
-h1,h2,h3{
-	text-shadow: 1px 1px 1px #222;
-}
-
-/* General Overrides */
-@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville|Raleway:700,300);
-
-body,html{
-	font-family: "Raleway", Helvetica, sans-serif;
-	/*padding-top: 3em;*/
-}
-
-
-
 .menu{
-	border-top: solid 3px #b99d5b;
-	background: #806c3e;
-	border-bottom: none;
+	height: 3.5em; /*2.5em;*/
+	padding-top: 1em;
 	/*position: fixed;*/
-}
-	.menu .navbar-inner{
-		background: #fff;
-		background-image: none !important;
-	}
-
-hr{
-	border: 0;
-	height: 5px;
-	/*background-color: #b99d5b;*/
-	background-color: #eae9ea;
-}
-
-
-@media (min-width: 979px){
-	header .row-fluid{
-		margin-top: 4em;
-	}
-}
-
-footer hr{
-	border: 0;
-	height: 5px;
-	background-color: #eae9ea;
-}
-
-.gravatar{
-	text-align: center;
-}
-.gravatar img{
-	height: 8em;
-	width: auto;
-	border-radius: 50%;
-	box-shadow: 0 0 0 3px #ccc, 0 0 1px 4px #000, 2px 2px 1.5em #333;
-
-	/*margin-top: 2em;*/
-
-
-}
-
-@media (max-width: 767px){
-	.gravatar img{
-		border-radius: 0;
-		box-shadow: 0 0 0 1px #fff, 0 0 0 8px #ccc;
-	}
-}
-
-
-
-/* Nav Bar Special Apperanced*/
-.navbar:before{
-	content: '';
-	position:relative;
-	display: block;
-	/*border-top: solid 1px #000;*/
-	border-bottom: solid 1px #806c3e;
 	width: 100%;
-	height:0;
-	box-shadow: 0 0 1.5em #fff;
+	border-bottom: solid 1px #999;
 }
-
-
-
-/* Posts */
-.post-image{
-	width: 3em;
-	height: 3em;
+.menu .brand{
+	float: left;
+}
+.menu ul{
 	float: right;
-/*	position: absolute;
-	height: 99%;
-	width: auto;
-	bottom: 1px;
-	left: 13em;*/
-}
-
-.posts{
 	list-style-type: none;
-	margin:0;
-	padding:0;
+	margin: 0;
+	padding: 0;
 }
-.posts li{
-	border-bottom: solid 1px #d9d5d2;
-}
-
-.posts article{
-	/*height: 8em;*/
-	position: relative;
-	/*padding: 1em;
-	background: #f1f1f1;*/
-	/*margin: 1em 1em 0 1em;*/
-/*	margin: .5em 0 0 0;
-	border-top-left-radius: .5em;
-	border-top-right-radius: .5em;*/
+.menu ul li{
+	background: #ddd;
+	padding: .5em;
+	border-radius: .25em;
+	display: inline-block;
 }
 
-.posts article time{
-	font-size: 1em;
-	display: block;
-	position: relative;
-	height: 4em;
+.masthead{
+	margin-left: -20px;
+	margin-right: -20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: -4.5em;
+	padding-top: 4.5em;
+	background: gray;
 }
-	@media (max-width: 480px){
-		.posts article time{
-			display: block;
-			height: 4em;
-		}
-	}
-	
-	.posts article time .day{
-		border-right: solid 1px #d9d5d2;
-		font-size: 3em;
-		width: 1em;
-		text-align: center;
-		padding: .5em .25em .5em 0;
-		position: absolute;
-		left: 0;
-	}
-	.posts article time .month{
-		position: absolute;
-		left: 5em;
-		top: 1.5em;
-	}
-
-	.posts article time .year{
-		position: absolute;
-		left: 7.25em;
-		top: 1.5em;
-	}
-
-/*@media (min-width: 479px){
-	.posts article h1, .posts article h2{
-		margin-left: 35%;
-		width: 65%;
-	}
-	.posts article p{
-		margin-left: 35%;
-		width: 65%;
-	}
-}*/
