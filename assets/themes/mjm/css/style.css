@@ -309,6 +309,7 @@ footer small{
  
 .toggle-switch label { 
 		display: block; 
+		overflow: hidden;
 		width: 2em;
 		height: 2em;
 
@@ -319,9 +320,16 @@ footer small{
 		border-radius: .5em;
 }
 	.toggle-switch label span{
-		/*font-size: 2em;*/
+		display: block;
+		width: 2em;
+		height: 2em;
 	}
- 
+	.toggle-switch label span:nth-child(1){
+		color: red;
+	}
+	.toggle-switch label span:nth-child(2){
+		color: yellow;
+	}
 /*.toggle-switch input:checked ~ .bg {*/
 	/*background: blue;*/
 /*}*/
@@ -329,9 +337,16 @@ footer small{
 	background: #222;
 	color: #fff;
 }
-.toggle-switch input:checked ~ label span:last-child { 
-	/*background: purple;*/
-}
+.toggle-switch input:checked ~ label span:nth-child(1){
+		margin-top: -2em;
+	}
+/*.toggle-switch input:checked ~ label:before{
+	content: 'Open';
+	position: absolute;
+}*/
+/*.toggle-switch input:checked ~ label span:last-child { 
+	background: purple;
+}*/
  
 
 .mobi-menu{
