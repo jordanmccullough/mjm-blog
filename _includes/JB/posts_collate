@@ -41,7 +41,7 @@ Usage:
 
         <article>
           <div class="row-fluid">
-            <div class="span3">
+            <div class="span2">
                 <div class="category"><i>{{ post.category }}</i></div>
 
                 {% comment %}
@@ -53,7 +53,7 @@ Usage:
                 
               </div>
 
-              <div class="span9">
+              <div class="span10">
                 
 
 

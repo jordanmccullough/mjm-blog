@@ -41,7 +41,7 @@ a:hover{
 ul.full-menu li{
 	text-transform: uppercase;
 	margin-top: 1.25em;
-	margin-left: 1em;
+	margin-left: 40px;
 	border-radius: .25em;
 	display: inline-block;
 	text-align: center;
@@ -81,22 +81,46 @@ ul.full-menu li a{
 	box-shadow: 0 -.25em 1em 0 #999;
 }
 
-.ribbon{
-	display: inline-block;
-	width: 100px;
+.full-menu .active{
+	/*display: inline-block;*/
+/*	width: 30px;
 	height: 5em;
 	background: #8ade77;
-	float: right;
+	float: right;*/
+	position: relative;
 }
-	.ribbon:before{
+	.full-menu .active:after{
+		content: '';
+		position: absolute;
+		left: 0;
+		width: 20px;
+		height: 5em;
+		margin-top: -1.5em;
+		left: -25px;
+		background: #8ade77;
+
+		background: #68a559; /* Old browsers */
+		background: -moz-linear-gradient(top,  #68a559 0%, #8ade77 36%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#68a559), color-stop(36%,#8ade77)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #68a559 0%,#8ade77 36%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #68a559 0%,#8ade77 36%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #68a559 0%,#8ade77 36%); /* IE10+ */
+		background: linear-gradient(to bottom,  #68a559 0%,#8ade77 36%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#68a559', endColorstr='#8ade77',GradientType=0 ); /* IE6-9 */
+
+
+	}
+	.full-menu .active:before{
 		content: '';
 		position: absolute;
 		width: 0; 
 		height: 0; 
-		margin-top: 5em;
-		border-right: 50px solid #8ade77;
-		border-left: 50px solid #8ade77;
-		border-bottom: 10px solid transparent;
+		margin-top: 3.5em;
+		left: -25px;
+		color: #8ade77;
+		border-right: 10px solid #8ade77;
+		border-left: 10px solid #8ade77;
+		border-bottom: 4px solid transparent;
 	}
 
 .gravatar{
