@@ -40,23 +40,32 @@ Usage:
         {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
 
         <article>
-          <a href="{{ BASE_PATH }}{{ post.url }}"><h1 class="title">{{ post.title }}</h1></a>
+          <div class="row-fluid">
+            <div class="span3">
+                
 
-          <span class="category">{{ post.category }}</span>
+                <span class="category">{{ post.category }}</span>
 
-          <time pubdate datetime="{{ mf_year }}-{{ mf_month }}-{{ mf_day }}">
-            <span class="month">{{this_month}}</span>
-            <span class="day">{{this_day}}</span>
-            <span class="year">{{this_year}}</span>
-          </time>
+                <time pubdate datetime="{{ mf_year }}-{{ mf_month }}-{{ mf_day }}">
+                  <span class="month">{{this_month}}</span>
+                  <span class="day">{{this_day}}</span>
+                  <span class="year">{{this_year}}</span>
+                </time>
+              </div>
 
-          {{ if post.image }}
-            <img class="post-image visible-desktop" src="{{ BASE_PATH }}/post-assets/{{ post.image }}">
-          {{ endif }}
+              <div class="span9">
+                <a href="{{ BASE_PATH }}{{ post.url }}"><h1 class="title">{{ post.title }}</h1></a>
 
-          
-          <p>{{ post.description }}</p>
+                {% comment %}
+                {{ if post.image }}
+                  <img class="post-image visible-desktop" src="{{ BASE_PATH }}/post-assets/{{ post.image }}">
+                {{ endif }}
+                {% endcomment %}
 
+                
+                <p>{{ post.description }}</p>
+              </div>
+          </div>
         </article>
       </li>
 

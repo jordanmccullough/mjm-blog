@@ -1,6 +1,7 @@
 ---
 layout: post
 category : lessons
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla mauris eu purus vestibulum at cursus orci dignissim.
 tags : [intro, beginner, jekyll, tutorial]
 image: "sample.jpg"
 ---
