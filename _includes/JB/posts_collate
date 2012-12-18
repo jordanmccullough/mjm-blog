@@ -40,6 +40,10 @@ Usage:
         {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
 
         <article>
+          <a href="{{ BASE_PATH }}{{ post.url }}"><h1 class="title">{{ post.title }}</h1></a>
+
+          <span class="category">{{ post.category }}</span>
+
           <time pubdate datetime="{{ mf_year }}-{{ mf_month }}-{{ mf_day }}">
             <span class="month">{{this_month}}</span>
             <span class="day">{{this_day}}</span>
@@ -50,7 +54,7 @@ Usage:
             <img class="post-image visible-desktop" src="{{ BASE_PATH }}/post-assets/{{ post.image }}">
           {{ endif }}
 
-          <a href="{{ BASE_PATH }}{{ post.url }}"><h2>{{ post.title }}</h2></a>
+          
           <p>{{ post.description }}</p>
 
         </article>
