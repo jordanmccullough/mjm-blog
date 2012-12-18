@@ -48,11 +48,9 @@ a:hover{
 
 
 	ul.full-menu{
-	float: right;
-	list-style-type: none;
-	margin: 0;
-	/*padding: .5em 0 0 0;*/
-}
+		list-style-type: none;
+		margin: 0;
+	}
 ul.full-menu li{
 	text-transform: uppercase;
 	margin-top: 1.25em;
@@ -152,28 +150,50 @@ ul.full-menu li a{
 	}
 
 footer{
-	background: #eae7e4;
+	border-top: solid 1px #ccc;
+	/*background: #333;*/
 	padding-top: 1em;
 	margin-top: 1em;
-	border-top-left-radius: .5em;
-	border-top-right-radius: .5em;
+	/*box-shadow: inset 0 3em 9em -2em #999, 0 -2px 3em 0 #ddd;*/
+	/*border-top-left-radius: .5em;*/
+	/*border-top-right-radius: .5em;*/
 }
+
 footer small{
+	/*background: #222;*/
 	display: block;
 	width: 100%;
-	border-top: solid 1px #999;
-	background: #ececec;
 	text-align: center;
 }
 
 .contact{
 	list-style-type: none;
 	margin: 0;
-	padding: 0;
+	padding: .5em;
+	text-align: center;
+	text-transform: uppercase;
 }
-	.contact li{
-		/*display: inline-block;*/
-		padding: .25em 1em;
+	.contact a{
+		color: #555;
+		display: inline-block;
+		background: #444;
+		margin: .5em;
+
+		border-radius: 50%;
+		box-shadow: 0 0 .5em 0 #999;
+	}
+	.contact a:hover i{
+		color: #fff;
+	}
+	.contact i{
+		display: block;
+		margin: .5em;
+		color: #ddd;
+		text-align: center;
+		width: 1em;
+		height: 1em;
+		font-size: 1em;
+		text-shadow: -1px -1px #000;
 	}
 
 .posts{
@@ -291,16 +311,23 @@ footer small{
 		display: block; 
 		width: 2em;
 		height: 2em;
-		z-index:1;
-		background: red;
+
+		background: #444;
 		margin: auto auto;
+		text-align: center;
+
+		border-radius: .5em;
 }
+	.toggle-switch label span{
+		/*font-size: 2em;*/
+	}
  
-.toggle-switch input:checked ~ .bg {
+/*.toggle-switch input:checked ~ .bg {*/
 	/*background: blue;*/
-}
+/*}*/
 .toggle-switch input:checked ~ label {
-	background: green;
+	background: #222;
+	color: #fff;
 }
 .toggle-switch input:checked ~ label span:last-child { 
 	/*background: purple;*/
@@ -330,8 +357,6 @@ footer small{
 }
 .mobi-menu li{
 	width: 100%;
-	margin-top: 0;
-	/*border-bottom: solid 1px blue;*/
 }
 
 .toggle-switch input { 
