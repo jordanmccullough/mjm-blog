@@ -323,30 +323,23 @@ footer small{
 		display: block;
 		width: 2em;
 		height: 2em;
+
+		transition: all 2s;
+		-webkit-transition: margin 300ms;
 	}
 	.toggle-switch label span:nth-child(1){
-		color: red;
+		color: #ccc;
 	}
 	.toggle-switch label span:nth-child(2){
-		color: yellow;
+		color: #fff;
 	}
-/*.toggle-switch input:checked ~ .bg {*/
-	/*background: blue;*/
-/*}*/
 .toggle-switch input:checked ~ label {
 	background: #222;
 	color: #fff;
 }
 .toggle-switch input:checked ~ label span:nth-child(1){
-		margin-top: -2em;
-	}
-/*.toggle-switch input:checked ~ label:before{
-	content: 'Open';
-	position: absolute;
-}*/
-/*.toggle-switch input:checked ~ label span:last-child { 
-	background: purple;
-}*/
+	margin-top: -2em;
+}
  
 
 .mobi-menu{
