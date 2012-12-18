@@ -2,34 +2,89 @@ html,body{
 	font-size: 14px;
 }
 .menu{
+	display: inline-block;
 	height: 3.5em; /*2.5em;*/
-	padding-top: 1em;
-	/*position: fixed;*/
 	width: 100%;
 	border-bottom: solid 1px #999;
+	border-bottom: solid 1px rgba(0,0,0,.15);
 }
+.menu a{
+	color: #444;
+}
+
 .menu .brand{
 	float: left;
+	margin-top: .625em;
+	font-size: 1.5em;
 }
 .menu ul{
 	float: right;
 	list-style-type: none;
 	margin: 0;
-	padding: 0;
+	padding: .5em 0 0 0;
 }
 .menu ul li{
-	background: #ddd;
 	padding: .5em;
 	border-radius: .25em;
 	display: inline-block;
 }
+.menu ul li a{
+	text-decoration: none;
+}
+	.menu ul li a:hover{
+		text-shadow: 1px 1px 1px #111;
+	}
 
 .masthead{
+	/*position: relative;*/
+	/*overflow: hidden;*/
+
+	height: 9em;
+
 	margin-left: -20px;
 	margin-right: -20px;
 	padding-left: 20px;
 	padding-right: 20px;
 	margin-top: -4.5em;
 	padding-top: 4.5em;
-	background: gray;
+	padding-bottom: 1em;
+	
+	background: #ffd65e; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffd65e 0%, #febf04 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffd65e), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffd65e 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffd65e 0%,#febf04 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffd65e 0%,#febf04 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffd65e 0%,#febf04 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd65e', endColorstr='#febf04',GradientType=0 ); /* IE6-9 */
+}
+.masthead:before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	top: 0;
+	margin-left: -20px;
+	margin-right: -20px;
+	margin-bottom: 1em;
+	/*margin-top: -1em;*/
+	border: solid 2px #fff;
+	box-shadow: 0 -.25em 1em 0 #999;
+}
+.masthead:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	top: 14em;
+	margin-left: -20px;
+	margin-right: -20px;
+	/*margin-top: -1em;*/
+	border: solid 1px #fff;
+	box-shadow: 0 0 3em 0 #999;
+}
+
+.gravatar{
+	display: inline-block;
+	/*float:left;*/
+	width: 40%;
+	border-radius: 1em;
 }
