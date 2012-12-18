@@ -1,11 +1,29 @@
 <div class="container-fluid">
 	<header class="menu">
-		<a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-		<ul>
-		  {% assign pages_list = site.pages %}
-		  {% assign group = 'navigation' %}
-		  {% include JB/pages_list %}
-		</ul>
+		
+				<a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+				
+				<ul class="hidden-phone">
+				  {% assign pages_list = site.pages %}
+				  {% assign group = 'navigation' %}
+				  {% include JB/pages_list %}
+				</ul>
+			
+				<div class="toggle-switch pull-right visible-phone">
+				<input type="checkbox" id="toggle-1" />
+				<div class="bg"></div>
+				<label for="toggle-1"><span>+</span><span>-</span></label>
+				<!-- <ul class="mobi-menu nav"> -->
+				<ul class="mobi-menu nav nav-tabs nav-stacked">
+					{% assign pages_list = site.pages %}
+			    {% assign group = 'navigation' %}
+			    {% include JB/pages_list %}
+				</ul>
+
+
+
+
+			
 	</header>
 </div>
 
