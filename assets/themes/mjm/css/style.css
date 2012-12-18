@@ -113,14 +113,15 @@ ul.full-menu li a{
 		background: #8ade77;
 
 		background: #f8b500; /* Old browsers */
-background: -moz-linear-gradient(top,  #f8b500 6%, #fccd4d 22%, #fbdf93 71%, #fceabb 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(6%,#f8b500), color-stop(22%,#fccd4d), color-stop(71%,#fbdf93), color-stop(100%,#fceabb)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #f8b500 6%,#fccd4d 22%,#fbdf93 71%,#fceabb 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #f8b500 6%,#fccd4d 22%,#fbdf93 71%,#fceabb 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #f8b500 6%,#fccd4d 22%,#fbdf93 71%,#fceabb 100%); /* IE10+ */
-background: linear-gradient(to bottom,  #f8b500 6%,#fccd4d 22%,#fbdf93 71%,#fceabb 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8b500', endColorstr='#fceabb',GradientType=0 ); /* IE6-9 */
+		background: -moz-linear-gradient(top,  #f8b500 6%, #fccd4d 22%, #fbdf93 71%, #fceabb 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(6%,#f8b500), color-stop(22%,#fccd4d), color-stop(71%,#fbdf93), color-stop(100%,#fceabb)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #f8b500 6%,#fccd4d 22%,#fbdf93 71%,#fceabb 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #f8b500 6%,#fccd4d 22%,#fbdf93 71%,#fceabb 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #f8b500 6%,#fccd4d 22%,#fbdf93 71%,#fceabb 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #f8b500 6%,#fccd4d 22%,#fbdf93 71%,#fceabb 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8b500', endColorstr='#fceabb',GradientType=0 ); /* IE6-9 */
 
+		box-shadow: 0em -.25em 1.5em -.35em #CCC
 
 	}
 	.full-menu .active:before{
@@ -266,6 +267,7 @@ footer small{
 		/* Opera */
 		-o-transform: rotate(-7deg);
 
+		box-shadow: 0 0 0 2px #fff, 0 0 1.5em 0 #ccc;
 
 	}
 	.posts .category i{
